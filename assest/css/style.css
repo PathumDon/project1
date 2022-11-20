@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.801);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav{
+    padding: 5px 0;
+    width: 80%;
+    margin: auto;
+}
+.menu{
+    display: inline-block;
+    float: right;
+}
+
+.menu li{
+    text-transform: uppercase;
+    float: right;
+    list-style: none;
+    margin-right: 10px;
+    font-size: 10px;
+    color: #cbcbcb;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+    
+#banner-section{
+    background-image: url(/assest/img/slide1.jpg);
+    height: 500px;
+    background-size: cover;
+}
