@@ -91,7 +91,7 @@ body{
 .banner-hi{
     background-color: #87d37c;
     color: #fff;
-    width: 54px;
+    width: 65px;
     height: 30px;
     position: relative;
     bottom: -20px;
@@ -108,4 +108,81 @@ body{
     position: absolute;
     background-image: url("/assest/img/icon.png");
     left: 40%;
+}
+
+#menuBtn{
+    background-color: transparent;
+    border: none;
+    float: right;
+
+}
+
+.menu-icon{
+    color: #fff;
+    margin: 5px;
+    font-size: 30px;
+}
+
+.mobile{
+    display: none;
+}
+
+#mobileMenu{
+    width: 80%;
+    height: 100vh;
+    background-color: rgb(78, 240, 45);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    /* display: none; */
+    transition: opacity 1s ease-out;
+    transition: height 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+#mobileMenu.active{
+opacity: 1;
+height: 100vh;
+}
+#closeBtn{
+    background-color: transparent;
+    border: none;S
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    font-size: 25px;
+    color: #fff;
+}
+.mobile-menu{
+    margin: 0;
+    margin-block-start: 0;
+    padding-inline-start: 0;
+    margin-top: 20px;
+}
+.mobile-menu li{
+    text-transform: uppercase;
+    list-style: none;
+    margin-right: 10px;
+    font-size: 25px;
+    color: #302f2f;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 5px;
+    border-bottom:1px solid #302f2f;
+    margin-top: 10px;
+    padding-left: 12px;
+
+}
+
+@media (max-width: 768px) {
+   .desktop-menu{
+    display: none;
+   }
+    
+   .mobile{
+    display: block;
+   }
 }

@@ -13,14 +13,17 @@
         <nav class="navbar">
             <div class="nav">
                 <img src="/assest/img/logo.png" alt="">
-                <ul class="menu">
+                <ul class="menu desktop-menu" >
                     <li>Home</li>
                     <li>Demo</li>
                     <li>Pages</li>
                     <li>Blog</li>
                     <li>Shop</li>
                     <li>Contact</li>
-                </ul>    
+                </ul>  
+                <button id="menuBtn" class="mobile">
+                <i class="menu-icon fa-solid fa-bars"></i>
+                </button>  
             </div>
            
         </nav>
@@ -45,5 +48,28 @@
         Hi!
        </div>
     </section>
+    <div id="mobileMenu" class="mobile">
+        <ul class="mobile-menu" >
+            <li>Home</li>
+            <li>Demo</li>
+            <li>Pages</li>
+            <li>Blog</li>
+            <li>Shop</li>
+            <li>Contact</li>
+        </ul>  
+        <button id="closeBtn"><i class="fa-regular fa-rectangle-xmark"></i></button>
+    </div>
+<script>
+let menuBtn = document.getElementById('menuBtn');
+let closeBtn = document.getElementById('closeBtn');
+let mobileMenu = document.getElementById('mobileMenu');
+menuBtn.addEventListener("click",() => {
+    mobileMenu.classList.add('active')
+})
+
+closeBtn.addEventListener("click", function(){
+    mobileMenu.classList.remove('active')
+})
+</script>
 </body>
 </html>
