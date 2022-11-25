@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assest/css/style.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <div class="nav">
                 <img src="/assest/img/logo.png" alt="">
-                <ul class="menu desktop-menu" >
+                <ul class="menu desktop-menu">
                     <li>Home</li>
                     <li>Demo</li>
                     <li>Pages</li>
                     <li>Blog</li>
                     <li>Shop</li>
                     <li>Contact</li>
-                </ul>  
+                </ul>
                 <button id="menuBtn" class="mobile">
-                <i class="menu-icon fa-solid fa-bars"></i>
-                </button>  
+                    <i class="menu-icon fa-solid fa-bars"></i>
+                </button>
             </div>
-           
+
         </nav>
     </header>
 
@@ -33,43 +35,108 @@
         <div class="banner-wrapper">
             <img class="uni-logo" src="/assest/img/uni-logo.png" alt="univercity logo">
             <h1 class="banner-title">We are the best university</h1>
-    
-           <div class="search-wrapper">
-            <input class = "search-bar" type="text" name="search" id="search" placeholder="search">
-            <button class="search-btn" type="submit" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-    
-           </div>
-    
-           <a class="action-btn" href="#">View all courses</a>
-   
+
+            <div class="search-wrapper">
+                <input class="search-bar" type="text" name="search" id="search" placeholder="search">
+                <button class="search-btn" type="submit" id="search-btn"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+
+            </div>
+
+            <a class="action-btn" href="#">View all courses</a>
+
         </div>
-       
-       <div class="banner-hi">
-        Hi!
-       </div>
+
+        <div class="banner-hi">
+            Hi!
+        </div>
     </section>
+    <section id="featured-section">
+        <div class="container">
+            <h2 class="section-title">Take a Look at What We Have are Doing!</h2>
+            <p class="section-title-discription">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
+                voluptatibus, praesentium consequatur earum asperiores itaque dignissimos veniam necessitatibus amet
+                eveniet eius! Expedita architecto odit repellendus laboriosam quis quia soluta neque!
+            </p>
+                
+                <div class="featured-grid">
+                    
+                    <div class="featured">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                            <h3 class="feature-title">Expert Teachers</h3>
+                            <p class="feature-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                                
+                            </p>
+                    </div>
+                    <div class="featured">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                            <h3 class="feature-title">Expert Teachers</h3>
+                            <p class="feature-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                                
+                            </p>
+                    </div>                    <div class="featured">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                            <h3 class="feature-title">Expert Teachers</h3>
+                            <p class="feature-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                                
+                            </p>
+                    </div>                    <div class="featured">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                            <h3 class="feature-title">Expert Teachers</h3>
+                            <p class="feature-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                                
+                            </p>
+                    </div>
+                </div>
+        
+            </div>
+
+    </section>
+
+    <section class="students">
+        <div class="students-grid">
+            <div class="students-col">
+
+            </div>
+            <div class="students-col">
+
+            </div>
+            
+        </div>
+    </section>
+
     <div id="mobileMenu" class="mobile">
-        <ul class="mobile-menu" >
+        <ul class="mobile-menu">
             <li>Home</li>
             <li>Demo</li>
             <li>Pages</li>
             <li>Blog</li>
             <li>Shop</li>
             <li>Contact</li>
-        </ul>  
+        </ul>
         <button id="closeBtn"><i class="fa-regular fa-rectangle-xmark"></i></button>
     </div>
-<script>
-let menuBtn = document.getElementById('menuBtn');
-let closeBtn = document.getElementById('closeBtn');
-let mobileMenu = document.getElementById('mobileMenu');
-menuBtn.addEventListener("click",() => {
-    mobileMenu.classList.add('active')
-})
+    <script>
+        let menuBtn = document.getElementById('menuBtn');
+        let closeBtn = document.getElementById('closeBtn');
+        let mobileMenu = document.getElementById('mobileMenu');
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.add('active')
+        })
 
-closeBtn.addEventListener("click", function(){
-    mobileMenu.classList.remove('active')
-})
-</script>
+        closeBtn.addEventListener("click", function () {
+            mobileMenu.classList.remove('active')
+        })
+    </script>
 </body>
+
 </html>
