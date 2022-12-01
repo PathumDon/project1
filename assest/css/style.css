@@ -149,7 +149,7 @@ height: 100vh;
 }
 #closeBtn{
     background-color: transparent;
-    border: none;S
+    border: none;
     position: absolute;
     top: 0;
     right: 0;
@@ -224,18 +224,39 @@ align-items: center;
 justify-content: center;
 
 }
+.students{
+    background-color: #f7f8f9;
+}
 
+.feature-title{
+    font-size: 30px;
+}
 .students-grid{
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-gap:20px;
 }
 
 .students-col{
 
     display: inline-grid;
-
 }
-@media (max-width: 768px) {
+
+.student-image{
+    width: 100%;
+}
+
+.student-title{
+    font-size: 20px;
+    width: 150px;
+}
+.student-num{
+    font-size: 40px;
+    color: #87d37c;
+}
+
+
+@media (max-width: 600px) {
    .desktop-menu{
     display: none;
    }
@@ -243,4 +264,23 @@ justify-content: center;
    .mobile{
     display: block;
    }
+   .featured-grid{
+ 
+    grid-template-columns: 50% 50%;
+       
 }
+
+.students-grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap:20px;
+}
+
+.student-content{
+ margin: 20px;   
+}
+
+}
+
+
+    
